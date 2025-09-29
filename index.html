@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Explorer Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>🌌 Space Explorer</h1>
+    <nav>
+      <a href="#solarSystem">Solar System</a>
+      <a href="#planetList">Planets</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore the Universe</h2>
+    <p>Discover planets, moons, and more with a click.</p>
+    <button id="exploreBtn">Start Exploring</button>
+  </section>
+
+  <section class="solar-system" id="solarSystem">
+    <div class="sun"></div>
+    <div class="orbit mercury"><div class="planet" data-planet="Mercury"></div></div>
+    <div class="orbit venus"><div class="planet" data-planet="Venus"></div></div>
+    <div class="orbit earth"><div class="planet" data-planet="Earth"></div></div>
+    <div class="orbit mars"><div class="planet" data-planet="Mars"></div></div>
+    <div class="orbit jupiter"><div class="planet" data-planet="Jupiter"></div></div>
+    <div class="orbit saturn"><div class="planet" data-planet="Saturn"></div></div>
+    <div class="orbit uranus"><div class="planet" data-planet="Uranus"></div></div>
+    <div class="orbit neptune"><div class="planet" data-planet="Neptune"></div></div>
+  </section>
+
+  <section class="planet-list" id="planetList">
+    <h2>🌍 Planets</h2>
+    <ul>
+      <li data-planet="Mercury">Mercury</li>
+      <li data-planet="Venus">Venus</li>
+      <li data-planet="Earth">Earth</li>
+      <li data-planet="Mars">Mars</li>
+      <li data-planet="Jupiter">Jupiter</li>
+      <li data-planet="Saturn">Saturn</li>
+      <li data-planet="Uranus">Uranus</li>
+      <li data-planet="Neptune">Neptune</li>
+    </ul>
+  </section>
+
+  <div class="planet-info" id="planetInfo">
+    <span id="closePanel">&times;</span>
+    <h3 id="planetName"></h3>
+    <p id="planetDetails"></p>
+  </div>
+
+  <footer id="about">
+    <p>Made with 💜 by Space Enthusiasts</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
